@@ -7,7 +7,7 @@ tags: [typography]
 math: true
 mermaid: true
 image:
-  path: /commons/devices-mockup.png
+  path: /image/IMG_9740.jpg
   width: 800
   height: 500
   alt: Responsive rendering of Chirpy theme on multiple devices.
@@ -111,7 +111,7 @@ Click the hook will locate the footnote[^footnote], and here is another footnote
 
 - Default (with caption)
 
-![Desktop View](/posts/istockphoto-1154580709-170667a.jpg){: width="972" height="589" }
+![Desktop View](/image/IMG_9740.jpg){: width="972" height="589" }
 _Full screen width and center alignment_
 
 <br>
