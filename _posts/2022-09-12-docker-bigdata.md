@@ -118,7 +118,7 @@ _Full screen width and center alignment_
 
 - Shadow
 
-![Window shadow](/posts/20190808/window.png){: .shadow width="1548" height="864" style="max-width: 90%" }
+![Window shadow](/posts/docker-bigdata/test.jpg){: .shadow width="1548" height="864" style="max-width: 90%" }
 _shadow effect (visible in light mode)_
 
 <br>
