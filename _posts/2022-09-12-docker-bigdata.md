@@ -111,7 +111,7 @@ Click the hook will locate the footnote[^footnote], and here is another footnote
 
 - Default (with caption)
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" }
+![Desktop View](/posts/istockphoto-1154580709-170667a.jpg){: width="972" height="589" }
 _Full screen width and center alignment_
 
 <br>
