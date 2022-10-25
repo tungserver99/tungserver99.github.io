@@ -1,9 +1,9 @@
 ---
-title: Text and Typography
-author: cotes
-date: 2019-08-08 11:33:00 +0800
-categories: [Blogging, Demo]
-tags: [typography]
+title: Bigdata và Docker: Sự kết hợp hoàn hảo cho người mới bắt đầu
+author: Tungserver
+date: 2022-10-25 11:33:00 +0800
+categories: [Bigdata, Docker]
+tags: [Bigdata, Docker]
 math: true
 mermaid: true
 image:
