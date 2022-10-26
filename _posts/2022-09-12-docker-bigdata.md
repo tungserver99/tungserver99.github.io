@@ -7,7 +7,7 @@ tags: [Bigdata]
 math: true
 mermaid: true
 image:
-  path: /commons/devices-mockup.png
+  path: /image/IMG_9740.jpg
   width: 800
   height: 500
   alt: Responsive rendering of Chirpy theme on multiple devices.
