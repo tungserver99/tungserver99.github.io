@@ -1,6 +1,6 @@
 ---
 title: "Bigdata và Docker: Sự kết hợp hoàn hảo cho người mới bắt đầu"
-author: cotes
+author: Tungserver
 date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
