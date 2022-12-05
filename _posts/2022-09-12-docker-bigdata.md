@@ -7,7 +7,7 @@ tags: [Bigdata]
 math: true
 mermaid: true
 image:
-  path: /image/test.jpg
+  path: /image/2022-09-12-docker-bigdata/banner.jpg
   width: 800
   height: 500
   alt: Responsive rendering of Chirpy theme on multiple devices.
