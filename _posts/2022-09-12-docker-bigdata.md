@@ -13,7 +13,7 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
+Bài viết này sẽ chỉ cho các bạn cách sử dụng kết hợp docker và bigdata để xây dựng một hệ thống giả lập lưu trữ xử lý dữ liệu lớn trong thực tế. Bài viết sẽ không nói về lý thuyết của bigdata hay docker mà sẽ đi trực tiếp vào thực hành và ứng dụng, nên nếu các bạn chưa biết docker hay bigdata là gì thì có thể tìm hiểu thêm trên các tài liệu khác nhé.
 
 
 ## Titles
@@ -28,9 +28,9 @@ This post is to show Markdown syntax rendering on [**Chirpy**](https://github.co
 ---
 <br>
 
-## Paragraph
+## Thiết lập Docker
 
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt bibendum rutrum. Proin commodo ornare sapien. Vivamus interdum diam sed sapien blandit, sit amet aliquam risus mattis. Nullam arcu turpis, mollis quis laoreet at, placerat id nibh. Suspendisse venenatis eros eros.
+Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas.
 
 ## Lists
 
