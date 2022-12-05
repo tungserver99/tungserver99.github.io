@@ -1,13 +1,13 @@
 ---
 title: "Bigdata và Docker: Sự kết hợp hoàn hảo cho người mới bắt đầu"
-author: cotes
+author: Tungserver99
 date: 2019-08-08 11:33:00 +0800
 categories: [Bigdata, Docker]
 tags: [Bigdata]
 math: true
 mermaid: true
 image:
-  path: /image/IMG_9740.jpg
+  path: /image/banner.jpg
   width: 800
   height: 500
   alt: Responsive rendering of Chirpy theme on multiple devices.
