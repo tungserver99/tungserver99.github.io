@@ -8,6 +8,5 @@ A lightweight static academic website for GitHub Pages, redesigned in a restrain
 - `publications.html` — full publications list
 - `cv.html` — CV summary and PDF link
 - `assets/css/style.css` — shared styling
-- `assets/files/Nguyen_Son_Tung_CV.pdf` — downloadable CV
 
 No build step is required. GitHub Pages can deploy directly from the `main` branch root.
