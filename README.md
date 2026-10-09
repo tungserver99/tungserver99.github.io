@@ -12,3 +12,8 @@ The stylesheet is embedded directly in each HTML page (`index.html`, `publicatio
 - `cv.html` — CV page
 
 There is no CV PDF in this project.
+
+
+## Legacy cache cleanup
+
+The three HTML pages automatically unregister legacy Service Workers and clear old Cache Storage entries from the previous GitHub Pages site.

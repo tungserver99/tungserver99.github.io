@@ -331,5 +331,20 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   </main>
 
   <footer class="footer"><div class="footer-inner"><span>© 2026 Nguyen Son Tung</span><span>Curriculum Vitae</span></div></footer>
+
+  <script>
+    // Remove any legacy Service Worker/PWA cache left by the previous site.
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        registrations.forEach((registration) => registration.unregister());
+      });
+    }
+
+    if ("caches" in window) {
+      caches.keys().then((names) => {
+        names.forEach((name) => caches.delete(name));
+      });
+    }
+  </script>
 </body>
 </html>
