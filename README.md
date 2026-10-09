@@ -1,12 +1,14 @@
-# Nguyen Son Tung — Academic Homepage
+# Nguyen Son Tung — Academic Portfolio
 
-A lightweight static academic website for GitHub Pages, redesigned in a restrained academic style inspired by the structure of common Academic Pages / Minimal Mistakes research websites.
+Static GitHub Pages portfolio.
+
+## Important implementation detail
+
+The stylesheet is embedded directly in each HTML page (`index.html`, `publications.html`, and `cv.html`). This deliberately avoids the intermittent stale/missing external CSS issue seen during rapid GitHub Pages redeployments, so navigation does not depend on reloading `assets/css/style.css` or using Ctrl+F5.
 
 ## Pages
+- `index.html` — homepage and selected publications
+- `publications.html` — publication list
+- `cv.html` — CV page
 
-- `index.html` — homepage, research interests, selected publications
-- `publications.html` — full publications list
-- `cv.html` — CV summary and PDF link
-- `assets/css/style.css` — shared styling
-
-No build step is required. GitHub Pages can deploy directly from the `main` branch root.
+There is no CV PDF in this project.

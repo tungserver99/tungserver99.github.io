@@ -5,7 +5,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Curriculum vitae of Nguyen Son Tung.">
   <title>CV | Nguyen Son Tung</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <style>
+:root {
+  --bg: #ffffff;
+  --text: #2f2f2f;
+  --muted: #666666;
+  --light: #8a8a8a;
+  --line: #e8e8e8;
+  --link: #2f78a3;
+  --link-hover: #1f5676;
+  --max: 1180px;
+  --sidebar: 245px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,.97);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-inner {
+  width: min(var(--max), calc(100% - 44px));
+  height: 68px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.site-title {
+  color: #222;
+  font-weight: 700;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+.site-title:hover { color: #222; text-decoration: none; }
+
+.top-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.top-nav a {
+  color: #444;
+  font-size: .94rem;
+  font-weight: 600;
+}
+.top-nav a:hover,
+.top-nav a.active { color: var(--link); text-decoration: none; }
+
+.page-shell {
+  width: min(var(--max), calc(100% - 44px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: var(--sidebar) minmax(0, 1fr);
+  gap: 62px;
+  padding: 54px 0 74px;
+}
+
+.profile {
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+
+.avatar {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #eeeeee;
+  margin-bottom: 21px;
+}
+
+.profile h1 {
+  font-size: 1.48rem;
+  line-height: 1.2;
+  margin: 0 0 9px;
+  color: #242424;
+  letter-spacing: -.02em;
+}
+
+.profile-role {
+  margin: 0 0 20px;
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: .93rem;
+}
+
+.profile-meta,
+.profile-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .9rem;
+}
+.profile-meta { margin-bottom: 18px; }
+.profile-meta li,
+.profile-links li { margin: 7px 0; }
+.profile-meta li { color: #555; }
+.profile-links a { font-weight: 500; }
+
+.content {
+  width: 100%;
+  max-width: 810px;
+}
+
+.content h1.page-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 28px;
+  color: #252525;
+  letter-spacing: -.03em;
+}
+
+.content h2 {
+  font-size: 1.24rem;
+  line-height: 1.35;
+  margin: 38px 0 16px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+  color: #292929;
+  font-weight: 700;
+}
+
+.content h3 {
+  font-size: 1rem;
+  margin: 22px 0 8px;
+  color: #333;
+}
+
+.content p { margin: 0 0 17px; }
+.content ul { margin: 8px 0 18px 1.25rem; padding: 0; }
+.content li { margin: 5px 0; }
+
+.intro {
+  font-size: 1.02rem;
+  color: #3d3d3d;
+}
+
+.research-list li strong { color: #262626; }
+
+.pub-list { list-style: none; margin: 0; padding: 0; }
+.pub-item { margin: 0 0 25px; }
+.pub-title {
+  margin: 0 0 3px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #262626;
+}
+.pub-title a { color: var(--link); }
+.pub-authors,
+.pub-venue,
+.pub-links {
+  margin: 0;
+  font-size: .93rem;
+}
+.pub-authors { color: #4f4f4f; }
+.pub-authors strong { color: #222; }
+.pub-venue { color: #6a6a6a; font-style: italic; }
+.pub-links { margin-top: 2px; }
+.pub-links a { margin-right: 12px; }
+
+.year-heading {
+  margin-top: 34px !important;
+  font-size: 1.05rem !important;
+  color: #555 !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.cv-section { margin-bottom: 34px; }
+.cv-row {
+  display: grid;
+  grid-template-columns: 145px minmax(0,1fr);
+  gap: 18px;
+  margin: 0 0 22px;
+}
+.cv-date { color: #777; font-size: .9rem; }
+.cv-body h3 { margin: 0 0 3px; font-size: 1rem; }
+.cv-body p { margin: 2px 0; color: #555; font-size: .94rem; }
+.download-cv {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 25px 0 34px;
+  color: #888;
+  font-size: .84rem;
+}
+.footer-inner {
+  width: min(var(--max), calc(100% - 44px));
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 850px) {
+  .page-shell {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 36px;
+  }
+  .profile { position: static; }
+  .profile-grid-mobile {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 22px;
+    align-items: start;
+  }
+  .avatar { width: 128px; height: 128px; margin: 0; }
+  .profile-meta, .profile-links { font-size: .88rem; }
+  .content { max-width: none; }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 15.5px; }
+  .header-inner,
+  .page-shell,
+  .footer-inner { width: min(var(--max), calc(100% - 28px)); }
+  .header-inner { height: auto; min-height: 62px; flex-wrap: wrap; padding: 12px 0; gap: 10px 20px; }
+  .top-nav { width: 100%; margin-left: 0; gap: 20px; }
+  .profile-grid-mobile { grid-template-columns: 102px minmax(0,1fr); gap: 18px; }
+  .avatar { width: 102px; height: 102px; }
+  .profile h1 { font-size: 1.3rem; }
+  .profile-role { font-size: .88rem; margin-bottom: 12px; }
+  .profile-meta { display: none; }
+  .content h1.page-title { font-size: 1.72rem; }
+  .cv-row { grid-template-columns: 1fr; gap: 2px; }
+  .footer-inner { flex-direction: column; gap: 4px; }
+}
+
+  </style>
   <link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg+xml">
 </head>
 <body>
